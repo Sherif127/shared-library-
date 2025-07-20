@@ -4,7 +4,7 @@ pipeline {
     agent { label 'ec2-agent' }
 
     environment {
-        DOCKER_IMAGE = 'leoughhh/jenkins_app'
+        DOCKER_IMAGE = 'leoughhh/jenkins-shared-lab'
         IMAGE_TAG = "v${BUILD_ID}"
         DEPLOYMENT_FILE = 'deployment.yaml'
     }
